@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rocking Stars - Home</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to The Rocking Stars Official Website!</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Latest News</h2>
+        <p>We just released our new album "Echoes of the Stars"! Check it out on all major streaming platforms.</p>
+    </section>
+
+    <section>
+        <h2>Upcoming Tour Dates</h2>
+        <ul>
+            <li>Cape Town - September 15, 2024</li>
+            <li>Johannesburg - October 2, 2024</li>
+            <li>Bloemfontein - October 18, 2024</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Rocking Stars. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rocking Stars - About Us</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>About The Rocking Stars</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Our Story</h2>
+        <p>The Rocking Stars were formed in 2020 by a group of friends with a shared passion for music. Since then, we've been rocking stages around the world, bringing our unique sound to fans everywhere.</p>
+    </section>
+
+    <section>
+        <h2>Meet the Band</h2>
+        <ul>
+            <li><strong>John Doe</strong> - Lead Vocals</li>
+            <li><strong>Jane Smith</strong> - Lead Guitar</li>
+            <li><strong>Bob Johnson</strong> - Bass Guitar</li>
+            <li><strong>Emily Davis</strong> - Drums</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Rocking Stars. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
